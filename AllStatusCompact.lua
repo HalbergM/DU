@@ -33,7 +33,7 @@ PlayerContainerOptimization = 0 --export Your Container Optimization bonus in to
 MinimumYellowPercent = 25 --export At which percent level do you want bars to be drawn in yellow (not red anymore)
 MinimumGreenPercent = 50 --export At which percent level do you want bars to be drawn in green (not yellow anymore)
 searchStringOre = " Ore" --export Your identifier for Ore Storage Containers (e.g. "Bauxite Ore"). Include the spaces if you change this!
-searchStringPure = "Pure " --export Your identifier for Pure Storage Containers (e.g. "Pure Aluminum"). Include the spaces if you change this!
+searchStringPure = "Pure " --export Your identifier for Pure Storage Containers (e.g. "Pure Aluminium"). Include the spaces if you change this!
 
 function processTick()
 
@@ -64,7 +64,7 @@ function processTick()
 
         Oxygen=1;
         Hydrogen=0.07;
-        Aluminum=2.7;
+        Aluminium=2.7;
         Carbon=2.27;
         Silicon=2.33;
         Iron=7.85;
@@ -228,7 +228,7 @@ function processTick()
     if display1 then
         html=htmlHeader
         html=html..d1..d2.."Tier 1"..t1..t2
-        html=html..AddHTMLEntry("Bauxite", "Aluminum")
+        html=html..AddHTMLEntry("Bauxite", "Aluminium")
         html=html..AddHTMLEntry("Coal", "Carbon")
         html=html..AddHTMLEntry("Hematite", "Iron")
         html=html..AddHTMLEntry("Quartz", "Silicon")

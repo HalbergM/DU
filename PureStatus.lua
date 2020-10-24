@@ -8,7 +8,7 @@
     3. Add a "tick()" filter and enter the parameter "updateTick, so "tick(updateTick)". In the Lua editor for the filter enter "processTick()"
     4. Link the core this setup is placed on to your Programming Board and rename the slot to "core"
     5. Link 1 screen to your Programming Board, preferably S or larger, and name the slot "display1".
-    6. Rename your pure storage boxes you want this script to observe. Pures must be named "Pure <purename>", e.g. "Pure Alumnium". Any wrongly named container will not be observed.You can rename the searchString under Advanced->Edit Lua Parameters, You MUST include spaces not in the actual substance name. You can have more than one container for a single substance, if you have e.g. three large containers for Aluminum, name all of them "Pure Aluminum". The script does not support multiple substances in one container.
+    6. Rename your pure storage boxes you want this script to observe. Pures must be named "Pure <purename>", e.g. "Pure Alumnium". Any wrongly named container will not be observed.You can rename the searchString under Advanced->Edit Lua Parameters, You MUST include spaces not in the actual substance name. You can have more than one container for a single substance, if you have e.g. three large containers for Aluminium, name all of them "Pure Aluminium". The script does not support multiple substances in one container.
     7. On your Programming Board choose Advanced->Edit Lua Parameters and enter your Container Proficiency Bonus in percent (0 to 50) and your Container Optimization Bonus in percent (0-25)
     8. Activate the Programming Board.
 ]]
@@ -25,7 +25,7 @@ PlayerContainerProficiency = 30 --export Your Container Proficiency bonus in tot
 PlayerContainerOptimization = 0 --export Your Container Optimization bonus in total percent (Skills->Mining and Inventory->Stock Control)
 MinimumYellowPercent = 25 --export At which percent level do you want bars to be drawn in yellow (not red anymore)
 MinimumGreenPercent = 50 --export At which percent level do you want bars to be drawn in green (not yellow anymore)
-searchString = "Pure " --export Your identifier for Pure Storage Containers (e.g. "Pure Aluminum"). Include the spaces if you change this!
+searchString = "Pure " --export Your identifier for Pure Storage Containers (e.g. "Pure Aluminium"). Include the spaces if you change this!
 
 function processTick()
 
@@ -35,7 +35,7 @@ function processTick()
      substanceMass = {
         Oxygen=1;
         Hydrogen=0.07;
-        Aluminum=2.7;
+        Aluminium=2.7;
         Carbon=2.27;
         Silicon=2.33;
         Iron=7.85;
@@ -190,7 +190,7 @@ function processTick()
     if display1 then
         html=htmlHeader
         html=html..d1..d2.."Tier 1"..t1..t2
-        html=html..AddHTMLEntry("Aluminum", "Carbon")
+        html=html..AddHTMLEntry("Aluminium", "Carbon")
         html=html..AddHTMLEntry("Iron", "Silicon")
         html=html..AddHTMLEntry("Hydrogen", "Oxygen")
 
